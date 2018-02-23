@@ -8,4 +8,4 @@ A catch-all for templates, boilerplate, snippets, etc.
 | | *mongoose_mode.js* | Template| a mongoose.Schema skeleton
 | ./javascript/node/ejs | *header.ejs* | Template | an dead simple html 5 header |
 | | *footer.ejs* | Template | dead simple footer |
-| ./javascript/misc | *utils.js* | Template | a collection of utility functions |
+| ./javascript/misc | *utils.js* | Module | a collection of utility functions |
