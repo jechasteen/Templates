@@ -1,7 +1,7 @@
 //
 // Global Name Variables
-const appName = ''      // "yelp_camp"
-const appNameNice = ''  // "Yelp Camp"
+const appName = ''
+const appNameNice = ''
 const hostName = 'localhost'
 const PORT = process.env.PORT || 1337
 const IP = process.env.IP || '127.0.0.1'
@@ -18,11 +18,18 @@ const mongoose = require('mongoose')
 var dbName = ['mongodb://', hostName, '/', appName].join('')
 mongoose.connect(dbName)
 
+// Include Routes
+// var routeName = require('./path/to/file')
+
+// Bind Routes
+// app.use('URI', routeName)
+
 //
 // Express properties
+app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}))
-app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public')))
 
 //
 // Routes
