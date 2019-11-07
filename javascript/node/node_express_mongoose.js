@@ -7,6 +7,10 @@ const PORT = process.env.PORT || 1337
 const IP = process.env.IP || '127.0.0.1'
 
 //
+// Includes
+const path = require('path');
+
+//
 // Set up express, body-parser and mongodb
 const express = require('express')
 const app = express()
